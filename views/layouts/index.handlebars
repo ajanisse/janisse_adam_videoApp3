@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>{{ title }}</title>
+	<link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.15/dist/vue.js"></script>
+
+</head>
+<body>
+	<header>
+		<img src="/images/roku.svg" alt="Roku logo" width="90"><span>FlashBack</span>
+		<nav>
+			<ul>
+				<li>Kids</li>
+				<li><i class="fas fa-user-circle"></i></li>
+				<li><i class="fas fa-cog"></i></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		{{{ body }}}
+	</main>
+
+	<footer>
+		<span>There should be some relevant info here... still in development</span>
+		<p class="copy">
+			&copy; 2018 The Awesome Company, Inc
+		</p>
+
+		<ul>
+			<li>
+				<i class="fab fa-facebook"></i>
+			</li>
+			<li>
+				<i class="fab fa-twitter-square"></i>
+			</li>
+			<li>
+				<i class="fab fa-google-plus-square"></i>
+			</li>
+			<li>
+				<i class="fab fa-instagram"></i>
+			</li>
+		</ul>
+	</footer>
+<script>
+
+  var appData = {
+    movies : {{{ data }}} //Grab the Unfiltered Result set
+   }
+</script>
+{{#if mainpage}}
+<script src="/javascripts/main.js"></script>
+{{/if}}
+{{#if videopage}}
+<script src="/javascripts/videopage.js"></script>
+{{/if}}
+
+</script>
+</body>
+</html>

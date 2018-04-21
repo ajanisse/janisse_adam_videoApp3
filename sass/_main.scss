@@ -1,0 +1,111 @@
+* { border: 0; padding: 0; margin: 0; }
+
+body {
+	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+	background-color: black;
+	color: white;
+}
+
+a {
+	color: #00B7FF;
+	text-decoration: none;
+}
+
+header {
+	background-color: #333;
+	padding: 9px 14px;
+	position: fixed;
+	z-index: 500;
+	width: 100%;
+
+	span {
+		margin-left: 12px;
+		font-weight: bolder;
+		font-size: 1.5em;
+		text-transform: uppercase;
+		position: relative;
+		top: -4px;
+	}
+}
+
+video { width: 100%; }
+
+.movie-wrapper { 
+	position: relative; padding-top: 52px;
+
+	aside {
+		position: absolute;
+		left: 1em;
+		top: 51px;
+		padding: 2em;
+		background-color: rgba(0, 0, 0, 0.8);
+	}
+}
+
+.movie-title { font-size: 1.7em; }
+.movie-year, .movie-time { font-size: 1.5em; }
+
+.movie-genre {
+	font-size: 1.25em;
+	font-weight: bolder;
+	display: block;
+	text-transform: uppercase;
+	margin-top: 8px;
+}
+
+.genre-name { font-size: 2em; padding: 1em 0 0.35em; }
+
+.movie-thumb { width: 160px; }
+
+.genre-list {
+  padding: 0 14px;
+  list-style-type: none;
+}
+
+.genre-lists { 
+	padding: 0 14px; overflow: hidden;
+
+	> div { 
+		position: relative; 
+		transition: all .5s; 
+		white-space: nowrap;
+		overflow-x: auto;
+		overflow-y: hidden; 
+	}
+}
+
+.genre-item { display: inline-block; }
+
+.movie-list { display: inline-block; margin-right: 1.25em; }
+
+nav {
+	ul {
+		position: absolute;
+		right: 3em;
+		top: 1.2em;
+		list-style-type: none;
+
+		li {
+			display: inline-block;
+			font-size: 1.25em;
+			padding: 0 0.2em;
+			cursor: pointer;
+		}
+	}
+} 
+
+footer {
+	padding: 2em 1em;
+
+	ul { 
+		list-style-type: none;
+
+		li {
+			font-size: 2.5em;
+			display: inline-block;
+			margin-right: 0.4em;
+			color: rgba(255, 255, 255, 0.3);
+			margin-top: 0.4em;
+		}
+	}
+}
